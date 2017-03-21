@@ -76,6 +76,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="CodingStar|编程星" type="application/atom+xml" />
 
@@ -89,22 +91,22 @@
 
 
 
-<meta name="description" content="快速上手基本概念数据语句操作符和表达式指针函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(i">
+<meta name="description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
+程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c与指针(note)">
+<meta property="og:title" content="c与指针">
 <meta property="og:url" content="http://codingstar.cn/blog/2017/02/18/读书笔记-c与指针.html">
 <meta property="og:site_name" content="CodingStar|编程星">
-<meta property="og:description" content="快速上手基本概念数据语句操作符和表达式指针函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(i">
-<meta property="og:updated_time" content="2017-03-21T03:34:23.191Z">
+<meta property="og:description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
+程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
+<meta property="og:updated_time" content="2017-03-21T04:49:33.920Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="c与指针(note)">
-<meta name="twitter:description" content="快速上手基本概念数据语句操作符和表达式指针函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(i">
+<meta name="twitter:title" content="c与指针">
+<meta name="twitter:description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
+程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
 
 
 
@@ -138,7 +140,7 @@
 
 
 
-  <title> c与指针(note) | CodingStar|编程星 </title>
+  <title> c与指针 | CodingStar|编程星 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -327,7 +329,7 @@
             
             
               
-                c与指针(note)
+                c与指针
               
             
           </h1>
@@ -396,10 +398,11 @@
       
 
       
-        <h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h1 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h1><h1 id="操作符和表达式"><a href="#操作符和表达式" class="headerlink" title="操作符和表达式"></a>操作符和表达式</h1><h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>   c的函数与其它函数相似之处甚多。本章正式描述c的函数。</p>
-<h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><p>   类型<br>   函数名（形式参数）<br>   代码块<br>   <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function_name()</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+        <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>   c的函数与其它函数相似之处甚多。本章正式描述c的函数。</p>
+<h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><p>   类型<br>   函数名（形式参数）<br>   代码块<br>   <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">function_name</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h3 id="程序7-1-在数组中寻找一个整型值"><a href="#程序7-1-在数组中寻找一个整型值" class="headerlink" title="程序7.1:在数组中寻找一个整型值"></a>程序7.1:在数组中寻找一个整型值</h3><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">int</span> *</span></div><div class="line"><span class="title">find_int</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> <span class="built_in">array</span>[], <span class="keyword">int</span> array_len)</span> &#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array_len; ++i) &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="built_in">array</span>[i] == key) &#123;</div><div class="line">            <span class="keyword">return</span> &amp;<span class="built_in">array</span>[i];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><p>   当编译器遇到一个函数调用时，它产生代码传递参数并调用这个函数，而且接收函数返回值（如果这个函数有返回值的话）。但是编译器如何知道这个函数接受的是什么类型的和多少数量的参数呢？如何知道函数的返回值类型呢？   </p>
+</code></pre><a id="more"></a>
+<h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><p>   当编译器遇到一个函数调用时，它产生代码传递参数并调用这个函数，而且接收函数返回值（如果这个函数有返回值的话）。但是编译器如何知道这个函数接受的是什么类型的和多少数量的参数呢？如何知道函数的返回值类型呢？   </p>
 <h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><ol>
 <li>如果同一源文件的前面已经出现了该函数的定义，编译器就会记住它的参数数量和类型。</li>
 <li>使用函数原型。原型总结了函数定义的起始部分的声明，向编译器提供了如何调用该元素的完整信息。使用原型最方便的方法是把原型置于一个单独的文件，当其他源文件需要<br>这个函数原型时，就是用<code>#include</code>指令包含该文件。<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 函数原型:注意最后面的那个分号，它区分了函数原型和函数定义的起始部分。原型告诉编译器函数的参数数量和每个参数的类型以及函数的返回类型。</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">int</span> *</span></div><div class="line"><span class="title">find_int</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> <span class="built_in">array</span>[], <span class="keyword">int</span> array_len)</span>;</div></pre></td></tr></table></figure>
@@ -487,22 +490,6 @@
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2017/02/18/读书笔记-C++Primer-第5版.html" rel="prev" title="C++Primer(note)">
-                C++Primer(note) <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
       
       
@@ -570,7 +557,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -643,7 +630,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速上手"><span class="nav-number">1.</span> <span class="nav-text">快速上手</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本概念"><span class="nav-number">2.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据"><span class="nav-number">3.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语句"><span class="nav-number">4.</span> <span class="nav-text">语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作符和表达式"><span class="nav-number">5.</span> <span class="nav-text">操作符和表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针"><span class="nav-number">6.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">7.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数定义"><span class="nav-number">7.1.</span> <span class="nav-text">函数定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#程序7-1-在数组中寻找一个整型值"><span class="nav-number">7.1.1.</span> <span class="nav-text">程序7.1:在数组中寻找一个整型值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数声明"><span class="nav-number">7.2.</span> <span class="nav-text">函数声明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原型"><span class="nav-number">7.2.1.</span> <span class="nav-text">原型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#总结：从几个方面看，第2种方法比第1种方法更好。"><span class="nav-number">7.2.1.1.</span> <span class="nav-text">总结：从几个方面看，第2种方法比第1种方法更好。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#思考：含糊声明存在危害。"><span class="nav-number">7.2.1.2.</span> <span class="nav-text">思考：含糊声明存在危害。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的缺省认定"><span class="nav-number">7.2.2.</span> <span class="nav-text">函数的缺省认定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的参数"><span class="nav-number">7.3.</span> <span class="nav-text">函数的参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#传参规则"><span class="nav-number">7.3.1.</span> <span class="nav-text">传参规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序示例"><span class="nav-number">7.3.2.</span> <span class="nav-text">程序示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#奇偶校验"><span class="nav-number">7.3.2.1.</span> <span class="nav-text">奇偶校验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数交换，无效的版本"><span class="nav-number">7.3.2.2.</span> <span class="nav-text">整数交换，无效的版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数交换，有效的版本"><span class="nav-number">7.3.2.3.</span> <span class="nav-text">整数交换，有效的版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将一个数组设置为0"><span class="nav-number">7.3.2.4.</span> <span class="nav-text">将一个数组设置为0</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ADT-和-黑盒"><span class="nav-number">7.3.3.</span> <span class="nav-text">ADT 和 黑盒</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#地址列表模块案例"><span class="nav-number">7.3.3.1.</span> <span class="nav-text">地址列表模块案例</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数定义"><span class="nav-number">1.1.</span> <span class="nav-text">函数定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#程序7-1-在数组中寻找一个整型值"><span class="nav-number">1.1.1.</span> <span class="nav-text">程序7.1:在数组中寻找一个整型值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数声明"><span class="nav-number">1.2.</span> <span class="nav-text">函数声明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原型"><span class="nav-number">1.2.1.</span> <span class="nav-text">原型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#总结：从几个方面看，第2种方法比第1种方法更好。"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">总结：从几个方面看，第2种方法比第1种方法更好。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#思考：含糊声明存在危害。"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">思考：含糊声明存在危害。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的缺省认定"><span class="nav-number">1.2.2.</span> <span class="nav-text">函数的缺省认定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的参数"><span class="nav-number">1.3.</span> <span class="nav-text">函数的参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#传参规则"><span class="nav-number">1.3.1.</span> <span class="nav-text">传参规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序示例"><span class="nav-number">1.3.2.</span> <span class="nav-text">程序示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#奇偶校验"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">奇偶校验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数交换，无效的版本"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">整数交换，无效的版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数交换，有效的版本"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">整数交换，有效的版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将一个数组设置为0"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">将一个数组设置为0</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ADT-和-黑盒"><span class="nav-number">1.3.3.</span> <span class="nav-text">ADT 和 黑盒</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#地址列表模块案例"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">地址列表模块案例</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
