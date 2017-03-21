@@ -92,21 +92,18 @@
 
 
 <meta name="description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c与指针">
 <meta property="og:url" content="http://codingstar.cn/blog/2017/02/18/读书笔记-c与指针.html">
 <meta property="og:site_name" content="CodingStar|编程星">
 <meta property="og:description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
-<meta property="og:updated_time" content="2017-03-21T04:49:33.920Z">
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;">
+<meta property="og:updated_time" content="2017-03-21T04:51:09.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c与指针">
 <meta name="twitter:description" content="函数   c的函数与其它函数相似之处甚多。本章正式描述c的函数。
-函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;
-程序7.1:在数组中寻找一个整型值123456789101112/*** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针*/int *find_int(int key, int arra">
+函数定义   类型   函数名（形式参数）   代码块   1234void function_name()&amp;#123;&amp;#125;">
 
 
 
@@ -400,9 +397,9 @@
       
         <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>   c的函数与其它函数相似之处甚多。本章正式描述c的函数。</p>
 <h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><p>   类型<br>   函数名（形式参数）<br>   代码块<br>   <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">function_name</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h3 id="程序7-1-在数组中寻找一个整型值"><a href="#程序7-1-在数组中寻找一个整型值" class="headerlink" title="程序7.1:在数组中寻找一个整型值"></a>程序7.1:在数组中寻找一个整型值</h3><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">** 在数组中寻找某个特定值的存储位置，并返回一个指向该位置的指针</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">int</span> *</span></div><div class="line"><span class="title">find_int</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> <span class="built_in">array</span>[], <span class="keyword">int</span> array_len)</span> &#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array_len; ++i) &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="built_in">array</span>[i] == key) &#123;</div><div class="line">            <span class="keyword">return</span> &amp;<span class="built_in">array</span>[i];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><a id="more"></a>
-<h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><p>   当编译器遇到一个函数调用时，它产生代码传递参数并调用这个函数，而且接收函数返回值（如果这个函数有返回值的话）。但是编译器如何知道这个函数接受的是什么类型的和多少数量的参数呢？如何知道函数的返回值类型呢？   </p>
+</code></pre><h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><p>   当编译器遇到一个函数调用时，它产生代码传递参数并调用这个函数，而且接收函数返回值（如果这个函数有返回值的话）。但是编译器如何知道这个函数接受的是什么类型的和多少数量的参数呢？如何知道函数的返回值类型呢？   </p>
 <h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><ol>
 <li>如果同一源文件的前面已经出现了该函数的定义，编译器就会记住它的参数数量和类型。</li>
 <li>使用函数原型。原型总结了函数定义的起始部分的声明，向编译器提供了如何调用该元素的完整信息。使用原型最方便的方法是把原型置于一个单独的文件，当其他源文件需要<br>这个函数原型时，就是用<code>#include</code>指令包含该文件。<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 函数原型:注意最后面的那个分号，它区分了函数原型和函数定义的起始部分。原型告诉编译器函数的参数数量和每个参数的类型以及函数的返回类型。</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">int</span> *</span></div><div class="line"><span class="title">find_int</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> <span class="built_in">array</span>[], <span class="keyword">int</span> array_len)</span>;</div></pre></td></tr></table></figure>
